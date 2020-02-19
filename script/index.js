@@ -85,6 +85,10 @@ function handlerCallBackForm(event) {
     if(target.classList.contains('calc-handler')){
         priceCalculation(target)
     }
+
+    if (adapt.checked === false) {
+        mobileTemplates.checked = false
+    }
 };
 
 startButton.addEventListener('click', function() {
